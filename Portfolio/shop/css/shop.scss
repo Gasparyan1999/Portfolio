@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: auto;
+    .burgermenu{
+        display: none;
+    }
+    .mediaslide{
+        display: none;
+    }
+    header{
+        width: 100%;
+        height: 70vh;
+        background-color: rgba(236, 230, 230, 0.4);
+        .burger{
+            display: none;
+        }
+        .nav{
+            display: flex;
+            width: 100%;
+            justify-content:space-around;
+        }
+        .logo{
+            display: inline-block;
+            width: 220px;
+            margin-left: 9vw ;
+            margin-top: 18px;
+        }
+        .menu{
+            margin-left: 20px;
+            margin-top: 23px;
+            display: inline-block;
+            width: 70%;
+        ul{
+            display: flex;
+            vertical-align: top;
+            list-style-type: none;
+            gap: 35px;
+            position: relative;
+            li{
+                font-size: calc(1.2vw);
+                font-weight: 400;
+            }
+        
+        .markfive{
+           margin-left: 10%;
+        }
+        }
+        .mark:hover,.marktwo:hover,.markthree:hover,.markfour:hover,.markfive:hover {
+            color: rgb(55, 207, 55);
+            cursor: pointer;
+        }
+        .mark{
+            position:relative;
+        }
+        .entertainment{
+            display: none;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 6px;
+            position: absolute;
+            left: -45px;
+        }
+        .mark:hover .entertainment{
+            display: block;
+            width: 200px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 6px;
+            z-index: 5;
+            color: black;
+            font-size: 18px;
+            text-align: center;
+         }
+         .text{
+             display: block;
+             width: 200ox;
+             height: 50px;
+             padding-top: 10px;
+         }
+        .text:hover{
+            background-color: rgb(55, 207, 55);
+        }
+        }
+        .headimg{
+            display: flex;
+            margin-top: 50px;
+            gap: 50px;
+            justify-content: space-around;
+         .img{
+             width: 350px;
+         }
+        }
+        .headslide{
+            display: flex;
+            width: 100%;
+            height: 70%;
+            margin-top: 3vh;
+            .left{
+                width: 5%;
+                height: 100%;
+                text-align: center;
+                cursor: pointer;
+                i{
+                    margin-top: 20vh;
+                    font-size: calc(5vh);
+                }
+            }
+            .right{
+                @extend .left
+            }
+            .left:hover{
+                background-color: rgb(55, 207, 55);
+            }
+            .right:hover{
+                background-color: rgb(55, 207, 55);
+            }
+            .container{
+                display: flex;
+                width: 90%;
+                height: 100%;
+                gap: 1px;
+                overflow: hidden;
+                img{
+                    transition: transform 300ms ease-in;
+                    width: 34%;
+                    height: 100%;
+                }
+            }
+        }
+        .dots{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            gap: 2%;
+            margin-top: 1%;
+            div{
+                width: 1%;
+                aspect-ratio: 1;
+                background-color: rgb(55, 207, 55);
+                border-radius: 25px;
+                cursor: pointer;
+            }
+        }
+    }
+    .elements{
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        aspect-ratio: 10/4;
+        background-color: rgba(160, 156, 156, 0.4);
+        .catalogone, .catalogtwo, .catalogthree{
+            min-height: 180px;
+            margin-top: 4%;
+            display: flex;
+            width: 100%;
+            height: 20%;
+            justify-content: center;
+            gap: 4%;
+            position: relative;
+            div{
+                width: 15%;
+                min-width: 250px;
+                height: 100%;
+                background-color: rgb(255, 4, 4);
+                border-radius: 20px;
+            }
+        }
+        .catalogone{
+            .mag{
+                display: inline-block;
+                position: absolute;
+                top:-5vh;
+                left: 12%;
+                font-size: calc(3.5vh);
+            }
+            .allmag{
+                display: inline-block;
+                position: absolute;
+                top:-5vh;
+                right: 12%;
+                font-size: calc(3vh);
+            }
+        }
+        .catalogtwo{
+            .mag{
+                display: inline-block;
+                position: absolute;
+                top:-5vh;
+                left: 15%;
+                font-size: calc(3.5vh);
+            }
+            .allmag{
+                display: inline-block;
+                position: absolute;
+                top:-5vh;
+                right: 15%;
+                font-size: calc(3vh);
+            }
+        }
+        .catalogthree{
+            .mag{
+                display: inline-block;
+                position: absolute;
+                top:-5vh;
+                left: 15%;
+                font-size: calc(3.5vh);
+            }
+            .allmag{
+                display: inline-block;
+                position: absolute;
+                top:-5vh;
+                right: 15%;
+                font-size: calc(3vh);
+            }
+        }
+    }
+    footer{
+        width: 100%;
+        height: auto;
+        background: linear-gradient(to top, rgba(29, 250, 0, 0.2), 10%, rgb(255, 255, 255,) );
+        padding-left: 20%;
+        // padding-top: 20px;
+        padding-bottom: 80px;
+        div{
+            display: inline-block;
+            width: 300px;
+            height: 200px;
+            vertical-align: top;
+            padding-top: 120px;
+            font-size: 20px;
+            cursor: pointer;
+            :nth-child(1){
+                color: rgb(0, 179, 0);
+            }
+            p:hover{
+                color: rgb(0, 179, 0);
+            }
+        }
+        .div{
+            padding-top: 120px;
+        }
+        .over{
+            width: 300px;
+            text-align: left;
+        }
+    }
+}
+@media only screen and (max-width: 980px){
+    main{
+        header{
+            .dots{
+                display: none;
+            }
+            .menu{
+                display: none;
+            }
+            .nav{
+            .burger{
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                margin-top: 10px;
+                cursor: pointer;
+                div{
+                    display: inline-block;
+                    width: 100%;
+                    height: 30%;
+                    background-color: rgb(124, 124, 124);
+                    border-radius: 20px;
+                }
+            }
+          }
+          .headslide{
+              display: none;
+          }
+          .mediaslide{
+              width: 100%;
+              height: 70% ;
+              display: flex;
+              margin-top: 3vh;
+              justify-content: center;
+              .medialeft{
+               width:5%;
+               height: 100%;
+               min-width: 100px;
+               text-align: right;
+               cursor: pointer;
+               i{
+                   font-size: calc(5vh);
+                   margin-right: 5%;
+                   margin-top: 20vh;
+               }
+              }
+              .mediaright{
+                  @extend .medialeft
+              }
+              .mediaright{
+                text-align: left;
+                  i{
+                    margin-left: 5%;
+                    margin-top: 20vh;
+                  }
+            }
+              .mediaright:hover{
+                background-color:rgb(55, 207, 55) ;
+            }
+            .medialeft:hover{
+                background-color:rgb(55, 207, 55) ;
+            }
+              .mediacontainer{
+                  max-width: 400px;
+                  min-width: 400px;
+                  width: 50%;
+                  height: 100%;
+                  display: flex;
+                  overflow: hidden;
+                  background-color: grey;
+                  img{
+                      transition: transform 300ms ease-in;
+                      display: block;
+                      width: 100%;
+                      height: 100%;
+                  }
+              }
+
+          }
+          .mediadots{
+              display: flex;
+              width: 100%;
+              height: auto;          
+              margin-top: 3%;
+              justify-content: center;
+              gap: 5px;
+              div{
+                  width: 15px;
+                  height: 15px;
+                  border-radius: 20px;
+                  background-color:rgb(55, 207, 55) ;
+                  cursor: pointer;
+              }
+
+          }
+        }
+        .burgermenu{
+                animation-duration: 2s;
+                animation-name: slidein;
+                display: none;
+                width: 290px;
+                height: 100%;
+                background-color: rgb(231, 221, 221);
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                z-index: 10;
+                @keyframes slidein {
+                    from {
+                      margin-left: 100%;
+                      width: 50%;
+                    }
+                  
+                    to {
+                      margin-left: 0%;
+                      width: 290px;
+                    }
+                }
+                    .mediaul{
+                        display: block;
+                        text-decoration: none;
+                        font-size: 25px;
+                        li{
+                            display: block;
+                            margin-top: 25px;
+                            margin-left: 10px;
+    
+                        }
+                        .mark{
+                            margin-top: 0;
+                        }
+                        .mark:hover,.marktwo:hover,.markthree:hover,.markfour:hover,.markfive:hover {
+                            color: rgb(55, 207, 55);
+                            cursor: pointer;
+                        }
+     
+                    }
+        }
+        .catalogone, .catalogtwo, .catalogthree{
+            div{
+                display: none;
+            }
+            .one{
+                display: block;
+            }
+        }
+    }
+
+}

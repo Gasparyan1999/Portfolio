@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Festive&family=Lato&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --navbackgroundcolor:rgb(5, 247, 235);
+  --fontcolor:rgb(14, 12, 12);
+  --mainbackgroundcolor:rgb(0, 0, 0);
+}
+
+main {
+  min-width: 960px;
+  background-color: #f6ffff;
+}
+
+main a {
+  text-decoration: none;
+}
+
+main header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 45px;
+  background-color: var(--navbackgroundcolor);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main header .burger {
+  display: none;
+}
+
+main header .logo {
+  width: 30%;
+  height: 100%;
+  min-width: 250px;
+  margin-left: 9%;
+}
+
+main header .logo p {
+  font-family: 'Anton', sans-serif;
+  font-size: 25px;
+  letter-spacing: 3px;
+  color: var(--fontcolor);
+}
+
+main header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 65%;
+  height: 100%;
+  margin-right: 5%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main header nav div {
+  width: 20%;
+  height: 100%;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+main header nav div p {
+  display: block;
+  font-size: 25px;
+  font-family: 'Anton', sans-serif;
+  color: var(--fontcolor);
+}
+
+main header nav div:hover {
+  background-color: var(--fontcolor);
+}
+
+main header nav div:hover p {
+  color: var(--navbackgroundcolor);
+}
+
+main .display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 93vh;
+}
+
+main .display .left, main .display .right {
+  width: 7.5%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--navbackgroundcolor);
+}
+
+main .display .left i, main .display .right i {
+  font-size: calc(10vw);
+  margin-top: 35vh;
+  color: var(--fontcolor);
+}
+
+main .display .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+main .display .container .info {
+  -webkit-transition: -webkit-transform 400ms ease-in;
+  transition: -webkit-transform 400ms ease-in;
+  transition: transform 400ms ease-in;
+  transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  text-align: center;
+}
+
+main .display .container .info .my {
+  color: var(--fontcolor);
+  font-family: 'Prompt', sans-serif;
+  letter-spacing: 3px;
+  margin-top: 10px;
+  font-weight: 800;
+  font-size: calc(2vw);
+}
+
+main .display .container .info hr {
+  width: 80%;
+  margin: 0 auto;
+  border-top: 3px solid var(--fontcolor);
+}
+
+main .display .container .info .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 90%;
+}
+
+main .display .container .info .text .education {
+  width: 50%;
+  height: 100%;
+}
+
+main .display .container .info .text .education hr {
+  width: 90%;
+}
+
+main .display .container .info .text .education h1 {
+  margin-top: 5%;
+}
+
+main .display .container .info .text .education .about {
+  margin-top: 14%;
+}
+
+main .display .container .info .text .education .textone {
+  margin: 0 auto;
+  width: 90%;
+}
+
+main .display .container .info .text .education .textone p {
+  margin-top: 3%;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: 'Prompt', sans-serif;
+}
+
+main .display .container .info .text .name {
+  width: 50%;
+  height: 100%;
+}
+
+main .display .container .info .text .name h1 {
+  margin-top: 5%;
+}
+
+main .display .container .info .text .name hr {
+  width: 90%;
+}
+
+main .display .container .info .text .name .scill {
+  display: inline-block;
+  margin: o auto;
+  width: 50%;
+  height: auto;
+  text-align: left;
+}
+
+main .display .container .info .text .name .scill p {
+  margin-top: 3%;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: 'Prompt', sans-serif;
+}
+
+main .display .container .info .text .name .cont {
+  margin-top: 13.5%;
+}
+
+main .display .container .info .text .name .texttwo {
+  margin: 0 auto;
+  width: 90%;
+}
+
+main .display .container .info .text .name .texttwo p {
+  margin-top: 3%;
+  font-size: 25px;
+  font-weight: 200;
+  font-family: 'Prompt', sans-serif;
+}
+
+main .display .container .calccon {
+  -webkit-transition: -webkit-transform 400ms ease-in;
+  transition: -webkit-transform 400ms ease-in;
+  transition: transform 400ms ease-in;
+  transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  min-height: 600px;
+}
+
+main .display .container .calccon .calc {
+  display: -ms-grid;
+  display: grid;
+  border: solid 5px black;
+  width: 80%;
+  height: 80%;
+  min-height: 600px;
+  margin: 0 auto;
+  margin-top: 5vh;
+  background-color: var(--fontcolor);
+  border-radius: 40px;
+  color: var(--fontcolor);
+  gap: 5px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "monitor monitor monitor monitor" "monitor monitor monitor monitor" "ac sign percent divide" "seven eight nine multiply" "four five six minus" "one two three plus" "zero zero dot equals";
+}
+
+main .display .container .calccon .calc div {
+  background-color: var(--navbackgroundcolor);
+  border-radius: 300px;
+  font-size: calc(6vh);
+  height: 90%;
+  text-align: center;
+  cursor: pointer;
+}
+
+main .display .container .calccon .calc div p {
+  display: inline-block;
+  margin-top: calc(1vw);
+  color: var(--fontcolor);
+}
+
+main .display .container .calccon .calc div:active {
+  background-color: var(--fontcolor);
+}
+
+main .display .container .calccon .calc div:active p {
+  color: var(--navbackgroundcolor);
+}
+
+main .display .container .calccon .calc .monitor {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: monitor;
+}
+
+main .display .container .calccon .calc .one {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+main .display .container .calccon .calc .two {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+main .display .container .calccon .calc .three {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: three;
+}
+
+main .display .container .calccon .calc .four {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: four;
+}
+
+main .display .container .calccon .calc .five {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: five;
+}
+
+main .display .container .calccon .calc .six {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: six;
+}
+
+main .display .container .calccon .calc .seven {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: seven;
+}
+
+main .display .container .calccon .calc .eight {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: eight;
+}
+
+main .display .container .calccon .calc .nine {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: nine;
+}
+
+main .display .container .calccon .calc .minus {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+  grid-area: minus;
+}
+
+main .display .container .calccon .calc .plus {
+  -ms-grid-row: 6;
+  -ms-grid-column: 4;
+  grid-area: plus;
+}
+
+main .display .container .calccon .calc .multiply {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: multiply;
+}
+
+main .display .container .calccon .calc .divide {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: divide;
+}
+
+main .display .container .calccon .calc .equals {
+  -ms-grid-row: 7;
+  -ms-grid-column: 4;
+  grid-area: equals;
+}
+
+main .display .container .calccon .calc .ac {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: ac;
+}
+
+main .display .container .calccon .calc .dot {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+  grid-area: dot;
+}
+
+main .display .container .calccon .calc .percent {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: percent;
+}
+
+main .display .container .calccon .calc .sign {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: sign;
+}
+
+main .display .container .calccon .calc .zero {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: zero;
+}
+
+main .display .container .css {
+  -webkit-transition: -webkit-transform 400ms ease-in;
+  transition: -webkit-transform 400ms ease-in;
+  transition: transform 400ms ease-in;
+  transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+main .display .container .css .compiler {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5vh;
+  height: auto;
+  text-align: center;
+}
+
+main .display .container .css .compiler .cssblock {
+  display: inline-block;
+  width: 30vw;
+  height: 20vw;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+main .display .container .css .compiler .cssblock .object {
+  display: inline-block;
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+}
+
+main .display .container .css .compiler .textblock {
+  margin-top: 50px;
+}
+
+main .display .container .css .compiler .text {
+  display: inline-block;
+  width: 24vw;
+  height: 11.5vw;
+  text-align: center;
+  background-color: var(--navbackgroundcolor);
+  font-size: calc(2vw);
+  border-radius: 20px;
+}
+
+main .display .container .css .compiler input {
+  margin-top: 20px;
+}
+
+main .display .left:hover, main .display .right:hover {
+  background-color: var(--fontcolor);
+}
+
+main .display .left:hover i, main .display .right:hover i {
+  color: var(--navbackgroundcolor);
+}
+/*# sourceMappingURL=style.css.map */

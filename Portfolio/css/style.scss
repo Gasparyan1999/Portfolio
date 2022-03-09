@@ -1,0 +1,343 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Festive&family=Lato&display=swap');
+:root{
+    --navbackgroundcolor:rgb(5, 247, 235);
+    --fontcolor:rgb(14, 12, 12);
+    --mainbackgroundcolor:rgb(0, 0, 0);
+}
+main{
+    min-width: 960px;
+    background-color: rgb(246, 255, 255);
+    a{
+        text-decoration: none;
+    }
+    header{
+        display: flex;
+        width: 100%;
+        height: 45px;
+        background-color: var(--navbackgroundcolor);
+        justify-content: space-between;
+        .burger{
+            display: none;
+        }
+        .logo{
+            width: 30%;
+            height: 100%;
+            min-width: 250px;
+            margin-left: 9%;
+            p{
+                font-family:'Anton', sans-serif;
+                font-size: 25px; 
+                letter-spacing: 3px;
+                color: var(--fontcolor);
+            }
+        }
+        nav{
+            display: flex;
+            width: 65%;
+            height: 100%;
+            margin-right: 5%;
+            justify-content: space-around;
+            div{
+                width: 20%;
+                height: 100%;
+                border-radius: 10px;
+                text-align: center;
+                cursor: pointer;
+                overflow: hidden;
+                p{
+                    display: block;
+                    font-size: 25px;
+                    font-family:'Anton', sans-serif;
+                    color: var(--fontcolor);
+                }
+            }
+            div:hover{
+                background-color: var(--fontcolor);
+                p{
+                    color: var(--navbackgroundcolor);
+                }
+            }
+        }
+
+    }
+    .display{
+        display: flex;
+        width: 100%;
+        height: 93vh;
+        .left{
+            width: 7.5%;
+            height: 100%;
+            text-align: center;
+            cursor: pointer;
+            background-color: var(--navbackgroundcolor);
+            i{
+                 font-size: calc(10vw);
+                 margin-top: 35vh;
+                 color: var(--fontcolor);
+            }
+        }
+    .container{
+        display: flex;
+        width: 85%;
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        .info{
+            transition: transform 400ms ease-in;
+            display: block;
+            width: 100%;
+            min-width: 100%;
+            height: 100%;
+            min-height: 100%;
+            text-align: center;
+                .my{
+                    color: var(--fontcolor);
+                    font-family: 'Prompt', sans-serif;
+                    letter-spacing: 3px;
+                    margin-top: 10px;
+                    font-weight: 800;
+                    font-size: calc(2vw);
+                }
+                hr{
+                    width: 80%;
+                    margin: 0 auto;
+                    border-top: 3px solid var(--fontcolor);
+                }
+                .text{
+                    display: flex;
+                    width: 100%;
+                    height: 90%;
+                    .education{
+                        width: 50%;
+                        height: 100%;
+                        hr{
+                            width: 90%;
+                        }
+                        h1{
+                            margin-top: 5%;
+                        }
+                        .about{
+                            margin-top: 14% ;
+                        }
+                        .textone{
+                            margin: 0 auto;
+                            width:90% ;
+                            p{
+                                margin-top: 3%;
+                                font-size: 25px;
+                                font-weight: 500;
+                                font-family: 'Prompt', sans-serif;
+                            }
+                        }
+                     
+                    }
+                    .name{
+                        width: 50%;
+                        height: 100%;
+                        h1{
+                            margin-top: 5%;
+                        }
+                        hr{
+                            width: 90%;
+                        }
+                        .scill{
+                            display: inline-block;
+                            margin:  o auto;
+                            width: 50%;
+                            height: auto;
+                            text-align: left;
+                            p{
+                                margin-top: 3%;
+                                font-size: 25px;
+                                font-weight: 500;
+                                font-family: 'Prompt', sans-serif;
+                            }
+                        }
+                        .cont{
+                            margin-top: 13.5%;
+                        }
+                        .texttwo{
+                            margin: 0 auto;
+                            width:90% ;
+                            p{
+                                margin-top: 3%;
+                                font-size: 25px;
+                                font-weight: 200;
+                                font-family: 'Prompt', sans-serif;
+                            }
+                    }
+                    }
+                }
+        }
+        .calccon{
+            transition: transform 400ms ease-in;
+            width: 100%;
+            min-width: 100%;
+            height: 100%;
+            min-height: 600px;
+        .calc{
+                display: grid;
+                border: solid 5px black;
+                width: 80%;
+                height: 80%;
+                min-height: 600px;
+                margin: 0 auto;
+                margin-top: 5vh;
+                background-color: var(--fontcolor);
+                border-radius: 40px;
+                color: var(--fontcolor);
+                gap: 5px;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-areas: 
+                "monitor monitor monitor monitor"
+                "monitor monitor monitor monitor"
+                "ac sign percent divide"
+                "seven eight nine multiply"
+                "four five six minus"
+                "one two three plus"
+                "zero zero dot equals"
+                ;
+                div{
+                    background-color:var(--navbackgroundcolor);
+                    border-radius: 300px;
+                    font-size: calc(6vh);
+                    height: 90%;
+                    text-align: center;
+                    cursor: pointer;
+                    p{
+                        display: inline-block;
+                        margin-top: calc(1vw);
+                        color: var(--fontcolor)
+                    }
+                }
+                div:active{
+                    background-color: var(--fontcolor);
+                    p{
+                    color: var(--navbackgroundcolor);
+                    }
+                }
+                .monitor{
+                    grid-area: monitor;
+                }
+                .one{
+                    grid-area: one;
+                }
+                .two{
+                    grid-area:two;
+                }
+                .three{
+                    grid-area:three;
+                }
+                .four{
+                    grid-area:four;
+                }
+                .five{
+                    grid-area:five;
+                }
+                .six{
+                    grid-area:six;
+                }
+                .seven{
+                    grid-area:seven;
+                }
+                .eight{
+                    grid-area:eight;
+                }
+                .nine{
+                    grid-area:nine;
+                }
+                .minus{
+                    grid-area:minus;
+                }
+                .plus{
+                    grid-area:plus;
+                }
+                .multiply{
+                    grid-area: multiply;    
+                }
+                .divide{
+                    grid-area: divide;
+                }
+                .equals{
+                    grid-area: equals;
+                }
+                .ac{
+                    grid-area:ac;
+                }
+                .dot{
+                    grid-area:dot;
+                }
+                .percent{
+                    grid-area:percent;
+                }
+                .sign{
+                    grid-area:sign;
+                }
+                .zero{
+                    grid-area:zero;
+                }
+            
+        }
+    }
+    .css{
+            transition: transform 400ms ease-in;
+            width: 100%;
+            min-width: 100%;
+            height: 100%;
+            min-height: 100%;
+            .compiler{
+                width: 80%;
+                margin: 0 auto;
+                margin-top: 5vh;
+                height: auto;
+                text-align: center;
+                .cssblock{
+                    display: inline-block;
+                    width: 30vw;
+                    height: 20vw;
+                    margin-top: 20px;
+                    border-radius: 20px;
+                    .object{
+                        display: inline-block;
+                        margin: 0 auto;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                .textblock{
+                    margin-top: 50px;
+                }
+                .text{
+                    display: inline-block;
+                    width: 24vw;
+                    height: 11.5vw;
+                    text-align: center;
+                    background-color: var(--navbackgroundcolor);
+                    font-size: calc(2vw);
+                    border-radius: 20px;
+                }
+                input{
+                    margin-top: 20px;
+                }
+            }
+    }
+}
+    .right{
+        @extend .left
+    }
+    .left:hover{
+        background-color: var(--fontcolor);
+        i{
+            color: var(--navbackgroundcolor);
+        }
+    }
+}
+
+}
+
+

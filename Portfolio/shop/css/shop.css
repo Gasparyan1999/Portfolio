@@ -1,0 +1,470 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+
+main .burgermenu {
+  display: none;
+}
+
+main .mediaslide {
+  display: none;
+}
+
+main header {
+  width: 100%;
+  height: 70vh;
+  background-color: rgba(236, 230, 230, 0.4);
+}
+
+main header .burger {
+  display: none;
+}
+
+main header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main header .logo {
+  display: inline-block;
+  width: 220px;
+  margin-left: 9vw;
+  margin-top: 18px;
+}
+
+main header .menu {
+  margin-left: 20px;
+  margin-top: 23px;
+  display: inline-block;
+  width: 70%;
+}
+
+main header .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: top;
+  list-style-type: none;
+  gap: 35px;
+  position: relative;
+}
+
+main header .menu ul li {
+  font-size: calc(1.2vw);
+  font-weight: 400;
+}
+
+main header .menu ul .markfive {
+  margin-left: 10%;
+}
+
+main header .menu .mark:hover, main header .menu .marktwo:hover, main header .menu .markthree:hover, main header .menu .markfour:hover, main header .menu .markfive:hover {
+  color: #37cf37;
+  cursor: pointer;
+}
+
+main header .menu .mark {
+  position: relative;
+}
+
+main header .menu .entertainment {
+  display: none;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 6px;
+  position: absolute;
+  left: -45px;
+}
+
+main header .menu .mark:hover .entertainment {
+  display: block;
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  border-radius: 6px;
+  z-index: 5;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+}
+
+main header .menu .text {
+  display: block;
+  width: 200ox;
+  height: 50px;
+  padding-top: 10px;
+}
+
+main header .menu .text:hover {
+  background-color: #37cf37;
+}
+
+main header .headimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  gap: 50px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main header .headimg .img {
+  width: 350px;
+}
+
+main header .headslide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 70%;
+  margin-top: 3vh;
+}
+
+main header .headslide .left, main header .headslide .right {
+  width: 5%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+main header .headslide .left i, main header .headslide .right i {
+  margin-top: 20vh;
+  font-size: calc(5vh);
+}
+
+main header .headslide .left:hover, main header .headslide .right:hover {
+  background-color: #37cf37;
+}
+
+main header .headslide .right:hover {
+  background-color: #37cf37;
+}
+
+main header .headslide .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  height: 100%;
+  gap: 1px;
+  overflow: hidden;
+}
+
+main header .headslide .container img {
+  -webkit-transition: -webkit-transform 300ms ease-in;
+  transition: -webkit-transform 300ms ease-in;
+  transition: transform 300ms ease-in;
+  transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
+  width: 34%;
+  height: 100%;
+}
+
+main header .dots {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2%;
+  margin-top: 1%;
+}
+
+main header .dots div {
+  width: 1%;
+  aspect-ratio: 1;
+  background-color: #37cf37;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+main .elements {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  aspect-ratio: 10/4;
+  background-color: rgba(160, 156, 156, 0.4);
+}
+
+main .elements .catalogone, main .elements .catalogtwo, main .elements .catalogthree {
+  min-height: 180px;
+  margin-top: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4%;
+  position: relative;
+}
+
+main .elements .catalogone div, main .elements .catalogtwo div, main .elements .catalogthree div {
+  width: 15%;
+  min-width: 250px;
+  height: 100%;
+  background-color: #ff0404;
+  border-radius: 20px;
+}
+
+main .elements .catalogone .mag {
+  display: inline-block;
+  position: absolute;
+  top: -5vh;
+  left: 12%;
+  font-size: calc(3.5vh);
+}
+
+main .elements .catalogone .allmag {
+  display: inline-block;
+  position: absolute;
+  top: -5vh;
+  right: 12%;
+  font-size: calc(3vh);
+}
+
+main .elements .catalogtwo .mag {
+  display: inline-block;
+  position: absolute;
+  top: -5vh;
+  left: 15%;
+  font-size: calc(3.5vh);
+}
+
+main .elements .catalogtwo .allmag {
+  display: inline-block;
+  position: absolute;
+  top: -5vh;
+  right: 15%;
+  font-size: calc(3vh);
+}
+
+main .elements .catalogthree .mag {
+  display: inline-block;
+  position: absolute;
+  top: -5vh;
+  left: 15%;
+  font-size: calc(3.5vh);
+}
+
+main .elements .catalogthree .allmag {
+  display: inline-block;
+  position: absolute;
+  top: -5vh;
+  right: 15%;
+  font-size: calc(3vh);
+}
+
+main footer {
+  width: 100%;
+  height: auto;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(29, 250, 0, 0.2)), color-stop(10%), to(white));
+  background: linear-gradient(to top, rgba(29, 250, 0, 0.2), 10%, white);
+  padding-left: 20%;
+  padding-bottom: 80px;
+}
+
+main footer div {
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  vertical-align: top;
+  padding-top: 120px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+main footer div :nth-child(1) {
+  color: #00b300;
+}
+
+main footer div p:hover {
+  color: #00b300;
+}
+
+main footer .div {
+  padding-top: 120px;
+}
+
+main footer .over {
+  width: 300px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 980px) {
+  main header .dots {
+    display: none;
+  }
+  main header .menu {
+    display: none;
+  }
+  main header .nav .burger {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  main header .nav .burger div {
+    display: inline-block;
+    width: 100%;
+    height: 30%;
+    background-color: #7c7c7c;
+    border-radius: 20px;
+  }
+  main header .headslide {
+    display: none;
+  }
+  main header .mediaslide {
+    width: 100%;
+    height: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 3vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main header .mediaslide .medialeft, main header .mediaslide .mediaright {
+    width: 5%;
+    height: 100%;
+    min-width: 100px;
+    text-align: right;
+    cursor: pointer;
+  }
+  main header .mediaslide .medialeft i, main header .mediaslide .mediaright i {
+    font-size: calc(5vh);
+    margin-right: 5%;
+    margin-top: 20vh;
+  }
+  main header .mediaslide .mediaright {
+    text-align: left;
+  }
+  main header .mediaslide .mediaright i {
+    margin-left: 5%;
+    margin-top: 20vh;
+  }
+  main header .mediaslide .mediaright:hover {
+    background-color: #37cf37;
+  }
+  main header .mediaslide .medialeft:hover, main header .mediaslide .mediaright:hover {
+    background-color: #37cf37;
+  }
+  main header .mediaslide .mediacontainer {
+    max-width: 400px;
+    min-width: 400px;
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    background-color: grey;
+  }
+  main header .mediaslide .mediacontainer img {
+    -webkit-transition: -webkit-transform 300ms ease-in;
+    transition: -webkit-transform 300ms ease-in;
+    transition: transform 300ms ease-in;
+    transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  main header .mediadots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 5px;
+  }
+  main header .mediadots div {
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #37cf37;
+    cursor: pointer;
+  }
+  main .burgermenu {
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+    display: none;
+    width: 290px;
+    height: 100%;
+    background-color: #e7dddd;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+  }
+  @-webkit-keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 50%;
+    }
+    to {
+      margin-left: 0%;
+      width: 290px;
+    }
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 50%;
+    }
+    to {
+      margin-left: 0%;
+      width: 290px;
+    }
+  }
+  main .burgermenu .mediaul {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  main .burgermenu .mediaul li {
+    display: block;
+    margin-top: 25px;
+    margin-left: 10px;
+  }
+  main .burgermenu .mediaul .mark {
+    margin-top: 0;
+  }
+  main .burgermenu .mediaul .mark:hover, main .burgermenu .mediaul .marktwo:hover, main .burgermenu .mediaul .markthree:hover, main .burgermenu .mediaul .markfour:hover, main .burgermenu .mediaul .markfive:hover {
+    color: #37cf37;
+    cursor: pointer;
+  }
+  main .catalogone div, main .catalogtwo div, main .catalogthree div {
+    display: none;
+  }
+  main .catalogone .one, main .catalogtwo .one, main .catalogthree .one {
+    display: block;
+  }
+}
+/*# sourceMappingURL=shop.css.map */
